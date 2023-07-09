@@ -16,7 +16,7 @@ $SUDO apt-get -y -qq update
 $SUDO apt-get -y -qq install git curl xz-utils libunwind-dev
 
 git clone -q --single-branch --depth 1 --branch "v$VERSION" https://github.com/elFarto/nvidia-vaapi-driver.git "nvidia-vaapi-driver-$VERSION"
-git clone -q --single-branch --depth 1 https://github.com/NVIDIA/open-gpu-kernel-modules
+git clone -q --single-branch --depth 1 https://github.com/NVIDIA/open-gpu-kernel-modules.git
 
 pushd "nvidia-vaapi-driver-$VERSION"
 ./extract_headers.sh open-gpu-kernel-modules 
